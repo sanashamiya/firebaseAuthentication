@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
                     String usernameFromDB = snapshot.child(userUsername).child("username").getValue(String.class);
                     String passwordFromDB = snapshot.child(userUsername).child("password").getValue(String.class);
                     Intent intent = new Intent(MainActivity.this, EditProfileActivity.class);
-                    startActivity(intent);
 
                     intent.putExtra("name", nameFromDB);
                     intent.putExtra("email", emailFromDB);
